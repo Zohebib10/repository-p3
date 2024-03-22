@@ -3,11 +3,12 @@
         Naam: <input type="text" name="naam" id="naam"></input></br></br>
         Bericht: <textarea type="text" name="bericht" id="bericht"></textarea></br></br>
         <input type="submit" name="knop" id="knop">
+        <a href="login.php">log hier in</a><br>
     </form>
 
 
     <?php
-    include "connectpdo.php";
+    include "connect.php";
 
     try {
         // INSERT query uitvoeren
@@ -30,7 +31,7 @@
          }}
          catch(PDOException $e)
          {
-            echo "Error: " . $e->getMassage();
+            echo "Error: " . $e->getMessege();
          }
 
          // Berichten ophalen

@@ -1,5 +1,5 @@
 <?php
-include "connectpdo.php"; // Include database connection details
+include "connect.php"; // Include database connection details
 
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
